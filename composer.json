@@ -1,0 +1,19 @@
+{
+    "name": "smh/flientstone",
+    "description": "laravel pakage key/value database store using flat files.we don't need redis on shared server by this.",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "SeyedMohsenHosseini",
+            "email": "h.hosseini.sm@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "smh\\Flintstone\\":"src/"
+        }
+    },
+    "require": {
+        "Illuminate/Support" : "~5"
+    }
+}
