@@ -33,25 +33,31 @@ Flintstone can store any data type that can be formatted into a string. By defau
 |formatter			|null or object		|null		|The formatter class used to encode/decode data				|
 |swap_memory_limit	|integer			|2097152	|The amount of memory to use before writing to a temporary file	|
 
+### Install to laravel
+you can install this package with command :
+
+``composer require smh/flintstone``
+
+then Add the following line to app.php on config folder:
+
+providers:
+```
+smh\Flintstone\FlintstoneServiceProvider::class, 
+```
+aliases
+```
+'Flintstone' => \smh\Flintstone\FlintstoneFacade::class,
+```
+And run command 
+```
+php artisan vendor:publish
+```
 
 ### Usage examples
 
 
 
-To use this Laravel Package Add the following line to app.php on config folder:
 
-providers:
-```php
-smh\Flintstone\FlintstoneServiceProvider::class, 
-```
-aliases
-```php
-'Flintstone' => \smh\Flintstone\FlintstoneFacade::class,
-```
-then run command 
-```php
-php artisan vendor:publish
-```
 you can set flintstone config on .env or not
 
 for example enter to .env:
