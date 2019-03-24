@@ -5,7 +5,6 @@
  * Date: 21/03/2019
  * Time: 09:37 AM
  */
-
 return [
     'FlintstoneDatabaseName' => (is_string(env('FlintstoneDatabaseName'))
         && strlen(env('FlintstoneDatabaseName')) > 0)?

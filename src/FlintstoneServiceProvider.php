@@ -19,13 +19,16 @@ class FlintstoneServiceProvider extends ServiceProvider
         });
 
         // add config file
-        $this->mergeConfigFrom(__DIR__.'/L-config/main.php','flintstone');
+        $this->mergeConfigFrom(__DIR__.'/Config/main.php','flintstone');
     }
 
     public function boot(){
 
         // add config file to laravel/config with vendor:publishes command
 
-        $this->publishes([__DIR__.'/L-config/main.php'=>config_path('flintstone')]);
+        $this->publishes(
+            [__DIR__.'/Config/main.php'=>config_path('flintstone.php')
+
+        ]);
     }
 }
