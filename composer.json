@@ -1,7 +1,9 @@
 {
     "name": "smh/flientstone",
-    "description": "laravel pakage key/value database store using flat files.we don't need redis on shared server by this.",
-    "license": "GPL",
+    "type": "package",
+    "description": "laravel package key/value database store using flat files.we don't need redis on shared server by this.",
+    "license": "MIT",
+    "keywords": ["flintstone", "database", "cache", "files", "memory","laravel package"],
     "authors": [
         {
             "name": "SeyedMohsenHosseini",
@@ -14,6 +16,10 @@
         }
     },
     "require": {
+        "php": ">=7.0",
         "Illuminate/Support" : "~5"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "^6",
     }
 }
