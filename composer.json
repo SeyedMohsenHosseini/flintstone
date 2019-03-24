@@ -1,5 +1,5 @@
 {
-    "name": "smh/flientstone",
+    "name": "smh/flintstone",
     "type": "package",
     "description": "laravel package key/value database store using flat files.we don't need redis on shared server by this.",
     "license": "MIT",
