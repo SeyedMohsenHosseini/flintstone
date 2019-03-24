@@ -10,14 +10,14 @@
             "email": "h.hosseini.sm@outlook.com"
         }
     ],
+    "require": {
+        "php": ">=7.0",
+        "Illuminate/Support" : "~5"
+    },
     "autoload": {
         "psr-4": {
             "smh\\Flintstone\\":"src/"
         }
-    },
-    "require": {
-        "php": ">=7.0",
-        "Illuminate/Support" : "~5"
     },
     "require-dev" : {
         "phpunit/phpunit": "^6",
