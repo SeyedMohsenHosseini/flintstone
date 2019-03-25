@@ -26,9 +26,8 @@ class FlintstoneServiceProvider extends ServiceProvider
 
         // add config file to laravel/config with vendor:publishes command
 
-        $this->publishes(
-            [__DIR__.'/Config/main.php'=>config_path('flintstone.php')
-
-        ]);
+        $this->publishes([
+            __DIR__.'/Config/main.php'=>config_path('flintstone.php')
+        ],'config');
     }
 }
